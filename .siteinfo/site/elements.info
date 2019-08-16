@@ -1,4 +1,4 @@
-02:12:57 Saturday August 17 2019
+04:48:40 Saturday August 17 2019
 elements
 elements
 template/page.template
@@ -6,4 +6,6 @@ template/page.template
 content/elements.content
 template/footer.content
 template/head.content
+template/header.content
+template/menu.content
 template/page.template

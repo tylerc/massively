@@ -2,7 +2,7 @@
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
-	site manager | nsm | https://nift.cc
+	site manager | Nift | https://nift.cc
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
@@ -12,31 +12,25 @@
 
     <body class="is-preload">
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
+			@input(template/header.content)
 
-				@inputcontent
+			@input(template/menu.content)
 
-				<!-- Footer -->
-					<footer id="footer">
-						@input(template/footer.content)
-					</footer>
+			@inputcontent
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Site Manager: <a href="https://nift.cc">nsm</a></li></ul>
-					</div>
-
-			</div>
+			@input(template/footer.content)
+		</div>
 
 		<!-- Scripts -->
-			<script src="@pathtofile(site/assets/js/jquery.min.js)"></script>
-			<script src="@pathtofile(site/assets/js/jquery.scrollex.min.js)"></script>
-			<script src="@pathtofile(site/assets/js/jquery.scrolly.min.js)"></script>
-			<script src="@pathtofile(site/assets/js/browser.min.js)"></script>
-			<script src="@pathtofile(site/assets/js/breakpoints.min.js)"></script>
-			<script src="@pathtofile(site/assets/js/util.js)"></script>
-			<script src="@pathtofile(site/assets/js/main.js)"></script>
-			<script src='@pathtofile(site/assets/js/process_pre_tags.js)'></script>
+		<script src="@pathtofile(site/assets/js/jquery.min.js)"></script>
+		<script src="@pathtofile(site/assets/js/jquery.scrollex.min.js)"></script>
+		<script src="@pathtofile(site/assets/js/jquery.scrolly.min.js)"></script>
+		<script src="@pathtofile(site/assets/js/browser.min.js)"></script>
+		<script src="@pathtofile(site/assets/js/breakpoints.min.js)"></script>
+		<script src="@pathtofile(site/assets/js/util.js)"></script>
+		<script src="@pathtofile(site/assets/js/main.js)"></script>
+		<script src='@pathtofile(site/assets/js/process_pre_tags.js)'></script>
     </body>
 </html>
 
