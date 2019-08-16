@@ -11,7 +11,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/pre.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- uses google-code-prettify for syntax highlighting 
+             see https://github.com/google/code-prettify/ for more info -->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     </head>
 
     <body class="is-preload">
@@ -415,16 +420,19 @@
 				
 								<!-- Preformatted Code -->
 									<h2>Preformatted</h2>
-									<pre>&lt;code>i = 0;
+									<center>
+										<pre class="prettyprint lang-python rounded">
+											i = 0;
 				
-				while (!deck.isInOrder()) {
-				print 'Iteration ' + i;
-				deck.shuffle();
-				i++;
-				}
+											while (!deck.isInOrder()) {
+												print 'Iteration ' + i;
+												deck.shuffle();
+												i++;
+											}
 				
-				print 'It took ' + i + ' iterations to sort the deck.';
-				&lt;/code></pre>
+											print 'It took ' + i + ' iterations to sort the deck.';
+										</pre>
+									</center>
 				
 							</section>
 				
@@ -494,5 +502,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src='assets/js/process_pre_tags.js'></script>
     </body>
 </html>
